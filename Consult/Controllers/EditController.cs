@@ -181,7 +181,7 @@ namespace Consult.Controllers
                     }
                     using (stream = new FileStream(path, FileMode.Open))
                     {
-                        var task = new FirebaseStorage("consult673.appspot.com")
+                        var task = new FirebaseStorage("StorageLink")
                                            .Child("images").Child(log.Id)
                                            .PutAsync(stream);
 
