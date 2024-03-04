@@ -32,13 +32,13 @@ namespace Consult.Controllers
         public EditController(IWebHostEnvironment webHostEnvironment)
         {
             _webHostEnvironment = webHostEnvironment;
-            auth = new FirebaseAuthProvider(new Firebase.Auth.FirebaseConfig("AIzaSyCpWgF--9l_rSkeSCboSy3NuQjNgpROX_o"));
+            auth = new FirebaseAuthProvider(new Firebase.Auth.FirebaseConfig("YourAuthToken"));
         }
 
         IFirebaseConfig config = new FireSharp.Config.FirebaseConfig
         {
-            //AuthSecret = "nj4aEjsxCd7BtHO2uij3o9nrLM4LznPEmx8Wr0vj",
-            BasePath = "https://consult673-default-rtdb.asia-southeast1.firebasedatabase.app"
+            //AuthSecret = "YourAuthSecret",
+            BasePath = "RTDB_BaseLink"
         };
         IFirebaseClient client;
         StorageClient storageClient;
