@@ -19,8 +19,8 @@ namespace Consult.Controllers
 
         IFirebaseConfig config = new FireSharp.Config.FirebaseConfig
         {
-            //AuthSecret = "nj4aEjsxCd7BtHO2uij3o9nrLM4LznPEmx8Wr0vj",
-            BasePath = "https://consult673-default-rtdb.asia-southeast1.firebasedatabase.app"
+            //AuthSecret = "YourAuthSecret",
+            BasePath = "RTDB_BaseLink"
         };
         IFirebaseClient client;
 
